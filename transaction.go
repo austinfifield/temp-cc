@@ -35,7 +35,7 @@ func (this *EnergyTrade) ProcessTransaction(stub shim.ChaincodeStubInterface, tr
 
 	energyBuyerTokenAsset.Value = energyBuyerTokenAsset.Value - tokensChange
 	energySellerTokenAsset.Value = energySellerTokenAsset.Value + tokensChange
-	energyBuyerEnergyAsset.Value = energyBuyerEnergyAsset.Value + tr.Value
+	energyBuyerEnergyAsset.Value = energyBuyerEnergyAsset.Value
 	energySellerEnergyAsset.Value = energySellerEnergyAsset.Value - tr.Value
 
 	//put back all asset
